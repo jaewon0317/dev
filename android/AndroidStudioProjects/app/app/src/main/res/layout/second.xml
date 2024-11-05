@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/base"
+        android:text="100"
+        android:textSize="30dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:background="#f00"
+        android:textColor="#fff"
+        android:layout_width="200dp"
+        android:layout_height="250dp"/>
+
+    <Button
+        android:layout_above="@+id/base"
+        android:layout_alignLeft="@+id/base"
+        android:text="aboveL"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_above="@+id/base"
+        android:layout_alignRight="@+id/base"
+        android:text="aboveR"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_below="@+id/base"
+        android:layout_alignLeft="@+id/base"
+        android:text="belowL"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_below="@+id/base"
+        android:layout_alignRight="@+id/base"
+        android:text="belowR"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_toLeftOf="@+id/base"
+        android:layout_alignTop="@+id/base"
+        android:text="top"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_toLeftOf="@+id/base"
+        android:layout_alignBaseline="@+id/base"
+        android:text="base"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_toLeftOf="@+id/base"
+        android:layout_alignBottom="@+id/base"
+        android:text="bottom"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_toRightOf="@+id/base"
+        android:layout_alignTop="@+id/base"
+        android:text="top"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_toRightOf="@+id/base"
+        android:layout_alignBaseline="@+id/base"
+        android:text="base"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_toRightOf="@+id/base"
+        android:layout_alignBottom="@+id/base"
+        android:text="bottom"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="??"
+        android:textSize="15dp"
+        android:layout_toRightOf="@+id/base"
+        android:layout_above="@+id/base"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

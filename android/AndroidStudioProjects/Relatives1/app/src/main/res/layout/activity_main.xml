@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:text="leftTop"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:background="#00f"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="RightTop"
+        android:layout_alignParentRight="true"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:background="#00f"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="LeftBottom"
+        android:layout_alignParentBottom="true"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:background="#00f"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="RightBottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:background="#00f"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="Center"
+        android:layout_centerInParent="true"
+        android:textSize="30dp"
+        android:padding="10dp"
+        android:background="#f00"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="Left center"
+        android:layout_centerVertical="true"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:background="#f00"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="Right center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:background="#f00"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="right center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:background="#f00"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="CenterTop"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:background="#f00"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="CenterBottom"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:background="#f00"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
