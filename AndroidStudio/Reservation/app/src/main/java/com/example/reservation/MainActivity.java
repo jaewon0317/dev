@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CalendarView;
@@ -20,9 +21,9 @@ Chronometer chronometer;
 Button btnStart,btnEnd;
 RadioButton rdoCal, rdoTime;
 CalendarView calendar;
-TimePicker timePicker;
+TimePicker TimePicker;
 TextView tvYear,tvMonth,tvDay,tvHour,tvMinute;
-int sYear,sMonth,sDay;
+int sYear,sMonth,sDay,sHour,sMin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,15 +35,17 @@ int sYear,sMonth,sDay;
         rdoCal = findViewById(R.id.rdoCal);
         rdoTime = findViewById(R.id.rdoTime);
         calendar = findViewById(R.id.calendar);
-        timePicker = findViewById(R.id.timepiker);
+        TimePicker = findViewById(R.id.TimePicker);
         tvYear = findViewById(R.id.tvYear);
         tvMonth = findViewById(R.id.tvMonth);
         tvDay = findViewById(R.id.tvDay);
+        tvHour = findViewById(R.id.tvHour);
         tvMinute = findViewById(R.id.tvMinute);
 
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                chronometer.setBase(SystemClock.elapsedRealtime());
                 chronometer.start();
                 chronometer.setTextColor(Color.RED);
             }
@@ -51,14 +54,14 @@ int sYear,sMonth,sDay;
             @Override
             public void onClick(View view) {
                 calendar.setVisibility(View.VISIBLE);
-                timePicker.setVisibility(View.INVISIBLE);
+                TimePicker.setVisibility(View.INVISIBLE);
             }
         });
         rdoTime.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 calendar.setVisibility(View.INVISIBLE);
-                timePicker.setVisibility(View.VISIBLE);
+                TimePicker.setVisibility(View.VISIBLE);
             }
         });
         calendar.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
@@ -78,8 +81,8 @@ int sYear,sMonth,sDay;
                 tvYear.setText(Integer.toString(sYear));
                 tvMonth.setText(Integer.toString(sMonth));
                 tvDay.setText(Integer.toString(sDay));
-                tvHour.setText(Integer.toString(timePicker.getCurrentHour()));
-                tvMinute.setText(Integer.toString(timePicker.getCurrentMinute()));
+                tvHour.setText(Integer.toString(TimePicker.getCurrentHour()));
+                tvMinute.setText(Integer.toString(TimePicker.getCurrentMinute()));
             }
         });
     }
