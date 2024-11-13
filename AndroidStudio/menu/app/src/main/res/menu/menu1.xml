@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="red"
+        android:id="@+id/red"/>
+    <item
+        android:title="green"
+        android:id="@+id/green"/>
+    <item
+        android:title="yello"
+        android:id="@+id/yello"/>
+    <item
+        android:title="기타">
+        <menu>
+            <item
+                android:id="@+id/rotate"
+                android:title="rotate">
+            </item>
+            <item
+                android:id="@+id/size"
+                android:title="size">
+            </item>
+        </menu>
+    </item>
+
+</menu>
