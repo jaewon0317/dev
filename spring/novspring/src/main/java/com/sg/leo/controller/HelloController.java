@@ -16,7 +16,7 @@ public class HelloController {
 		@GetMapping("/jsp")
 		public String jsp(Model model) {
 			System.out.println("jsp 파일이 요청");
-			model.addAttribute("username",'이 콘텐츠 주인 고재원');
+			model.addAttribute("username"+"이 콘텐츠 주인 고재원");
 			return "hellojsp2";
 		
 		}
