@@ -1,5 +1,5 @@
 // Google Vision API 키와
-VISION_API_KEY = "";
+VISION_API_KEY = "AIzaSyAJrBx6424d5aTpQN6GGHS_9zrMaY0raFE";
 
 let imagestring ='';
 

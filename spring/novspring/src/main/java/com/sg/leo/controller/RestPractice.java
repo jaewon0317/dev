@@ -29,4 +29,5 @@ public class RestPractice {
 		return "/getparam name = "+ name + ", email=" + email;
 	}
 	
+	
 }
