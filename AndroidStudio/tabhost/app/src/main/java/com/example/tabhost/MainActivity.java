@@ -7,13 +7,13 @@ import android.widget.TabHost;
 
 public class MainActivity extends AppCompatActivity {
 
-    TabHost tabHost;
+    TabHost tabhost;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        tabHost = findViewById(R.id.tabHost);
+        tabHost = findViewById(R.id.tabhost);
         TabHost.setup();
 
         TabHost.TapSpec tabspec1 = tabHost.newTabspec("song");
